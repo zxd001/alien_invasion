@@ -16,8 +16,9 @@ class AlienInvasion:
         )
         #将screen参数传递给Ship类
         self.ship = Ship(self)
-        #设置窗口标题
-        pygame.display.set_caption("Alien Invasion")
+        #设置窗口标题及图标
+        pygame.display.set_caption(self.settings.caption)
+        pygame.display.set_icon(self.settings.icon)
         #设置背景色
 
     def run_game(self):

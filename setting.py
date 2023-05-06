@@ -1,3 +1,6 @@
+import pygame.image
+
+
 class Settings:
     '''存储游戏设置'''
     def __init__(self):
@@ -6,3 +9,5 @@ class Settings:
         self.screen_width = 1200
         self.screen_height = 600
         self.bg_color = (230,230,230)
+        self.caption = "Alien Invasion"
+        self.icon = pygame.image.load('images/icon1.jpg')
